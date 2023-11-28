@@ -1,0 +1,14 @@
+[
+  {
+    "name": "chatgpt-web",
+    "cwd": "./service",
+    "script": "node ./build/index.mjs",
+    "user": "www-data",
+    "exec_mode": "fork",
+    "min_uptime": "60s",
+    "max_memory_restart": "512M",
+    "max_restarts": 2,
+    "error_file": "./pm2-error.log",
+    "out_file": "./pm2-out.log"
+  }
+]
